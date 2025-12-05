@@ -7,7 +7,8 @@ const Hapi = require('@hapi/hapi');
 //Finding dramas
 exports.findAll = async function() {
     try {
-        return await client.query(`SELECT * FROM full_info`);
+        const result = await client.query(`SELECT * FROM full_info`);
+        return result.rows;
     } catch(error) {
         throw new Error ("Database error: " + error.message);
     }
@@ -16,7 +17,8 @@ exports.findAll = async function() {
 //Finding specific drama
 exports.find = async function(id) {
     try {
-        return await client.query(`SELECT * FROM full_info WHERE drama_id=$1`, [id]);
+        const result = await client.query(`SELECT * FROM full_info WHERE drama_id=$1`, [id]);
+        return result.rows;
     } catch(error) {
         throw new Error ("Database error: " + error.message);
     }
