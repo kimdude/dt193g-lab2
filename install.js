@@ -91,7 +91,8 @@ client.query(`
         ('Comedy'),
         ('Romance'),
         ('History'),
-        ('Fantasy');
+        ('Fantasy'),
+        ('Horror');
 `);
 
 client.query(`
@@ -106,7 +107,9 @@ client.query(`
         ('Costume drama'),
         ('Super natural'),
         ('Corporate'),
-        ('Mystery');
+        ('Mystery'),
+        ('Revenge'),
+        ('Slice of life');
 `);
 
 client.query(`
