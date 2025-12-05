@@ -1,0 +1,5 @@
+Genre (genre_id (pk), genre_name)
+Contains (genre_id(pk,fk), drama_id (pk,fk))
+Drama (drama_id(pk), drama_title, drama_release_year, episodes)
+Has (drama_id (pk,fk), tag_id(pk,fk))
+Tags (tag_id (pk), tag_name)

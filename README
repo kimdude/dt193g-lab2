@@ -1,0 +1,42 @@
+# DT197G - lab 2.2
+## API med backend-ramverk
+
+Repot innehåller källkod för ett API skapat med Hapi. API:et har CRUD funktionalitet för att hantera drama-serier i en Postgre databas.
+
+## API:et
+### Router
+
+Följande router kan användas för att utföra operationer på data i databasen:
+
+| Metod     | Länk         |    Resultat                   |
+|-----------|--------------|-------------------------------|
+| GET       | /            | Returnerar alla drama-serier  |
+| GET       | /{id}        | Returnerar specifikt drama    |
+| POST      | /{id}        | Lagra nytt drama              |
+| PUT       | /{id}        | Uppdatera drama               |
+| DELETE    | /{id}        | Radera drama                  |
+
+### Lagra nytt drama
+
+
+
+
+### Kategorier
+1. Thriller
+2. Action
+3. Comedy
+4. Romance
+5. History
+6. Fantasy
+
+### Taggar
+1. Apocalypse
+2. Maffia
+3. Time travel
+4. Zombies
+5. Suspense
+6. Crime
+7. Costume drama
+8. Super natural
+9. Mystery
+10. Corporate
