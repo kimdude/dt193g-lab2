@@ -1,4 +1,4 @@
-# DT197G - lab 2.2
+# DT193G - lab 2.2
 ## API med backend-ramverk
 
 Repot innehåller källkod för ett API skapat med Hapi. API:et har CRUD funktionalitet för att hantera drama-serier i en Postgre databas.
