@@ -30,8 +30,8 @@ module.exports = (server) => {
                         release_year: Joi.number().integer().min(1900).max(2027),
                         episodes: Joi.number().integer().min(1).max(70),
                         webtoon: Joi.boolean(),
-                        genres: Joi.array().items(Joi.number().integer()),
-                        tags: Joi.array().items(Joi.number().integer())
+                        genres: Joi.array().items(Joi.number().integer().min(1).max(7)),
+                        tags: Joi.array().items(Joi.number().integer().min(1).max(13))
                     })
                 }
             }
@@ -49,7 +49,7 @@ module.exports = (server) => {
             options: {
                 validate: {
                     params: Joi.object({
-                        id: Joi.number().integer().min(1).max(100).required() //Validating parameter
+                        id: Joi.number().integer().min(1).required() //Validating parameter
                     })
                 }
             }
@@ -67,15 +67,15 @@ module.exports = (server) => {
             options: {
                 validate: {
                     params: Joi.object({
-                        id: Joi.number().integer().min(1).max(100).required() //Validating parameter
+                        id: Joi.number().integer().min(1).required() //Validating parameter
                     }),
                     payload: Joi.object({ //Validating payload
                         title: Joi.string().min(1).max(50).required(),
                         release_year: Joi.number().integer().min(1900).max(2027),
                         episodes: Joi.number().integer().min(1).max(70),
                         webtoon: Joi.boolean(),
-                        genres: Joi.array().items(Joi.number().integer()),
-                        tags: Joi.array().items(Joi.number().integer())
+                        genres: Joi.array().items(Joi.number().integer().min(1).max(7)),
+                        tags: Joi.array().items(Joi.number().integer().min(1).max(13))
                     })
                 }
             }
@@ -93,7 +93,7 @@ module.exports = (server) => {
             options: {
                 validate: {
                     params: Joi.object({
-                        id: Joi.number().integer().min(1).max(100).required() //Validating parameter
+                        id: Joi.number().integer().min(1).required() //Validating parameter
                     })
                 }
             }
