@@ -1,3 +1,5 @@
+**HEJ LÄRARE... Jag publicerade till github ganska sent in. Sedan glömde jag gitignore och raderade repot och publicerade på nytt en gång... hoppas det är ok...**
+
 # DT193G - lab 2.2
 ## API med backend-ramverk
 
