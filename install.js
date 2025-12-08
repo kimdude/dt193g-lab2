@@ -109,14 +109,14 @@ client.query(`
         ('Corporate'),
         ('Mystery'),
         ('Revenge'),
-        ('Slice of life');
+        ('Slice of life'),
+        ('Slow burning');
 `);
 
 client.query(`
     INSERT INTO lab2_categorized (genre_id, drama_id)
     VALUES 
         (1, 1),
-        (1, 2),
         (2, 2),
         (3, 3),
         (4, 3);
