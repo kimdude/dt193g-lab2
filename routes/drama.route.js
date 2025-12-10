@@ -15,6 +15,20 @@ module.exports = (server) => {
             handler: dramaController.getAllDramas
         },
 
+        /* Route to get all genres */
+        {
+            method: 'GET',
+            path: '/genres',
+            handler: dramaController.getAllGenres
+        },
+
+        /* Route to get all tags */
+        {
+            method: 'GET',
+            path: '/tags',
+            handler: dramaController.getAllTags
+        },
+
         /* Route to add drama */
         { 
             method: 'POST',

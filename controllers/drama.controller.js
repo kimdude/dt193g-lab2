@@ -18,6 +18,24 @@ exports.getDrama = async function(id) {
     }
 }
 
+//Getting all genres
+exports.getAllGenres = async function() {
+    try{
+        return await model.findGenres();
+    } catch(error) {
+        return h.response("An error occurred getting drama. " + error).code(500);
+    }
+}
+
+//Getting all tags
+exports.getAllTags = async function() {
+    try{
+        return await model.findTags();
+    } catch(error) {
+        return h.response("An error occurred getting drama. " + error).code(500);
+    }
+}
+
 //Adding drama
 exports.addDrama = async function (data) {
     try {

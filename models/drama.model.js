@@ -25,6 +25,26 @@ exports.find = async function(id) {
 
 }
 
+//Finding genres
+exports.findGenres = async function() {
+    try {
+        const result = await client.query(`SELECT * FROM lab2_genres`);
+        return result.rows;
+    } catch(error) {
+        throw new Error ("Database error: " + error.message);
+    }
+}
+
+//Finding tags
+exports.findTags = async function() {
+    try {
+        const result = await client.query(`SELECT * FROM lab2_tags`);
+        return result.rows;
+    } catch(error) {
+        throw new Error ("Database error: " + error.message);
+    }
+}
+
 //Adding new drama
 exports.add = async function(data) {
 
