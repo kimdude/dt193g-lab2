@@ -15,6 +15,8 @@ Följande router kan användas för att utföra operationer på data i databasen
 |-----------|--------------|-------------------------------|
 | GET       | /            | Returnerar alla drama-serier  |
 | GET       | /{id}        | Returnerar specifikt drama    |
+| GET       | /genres      | Returnerar alla genrer        |
+| GET       | /tags        | Returnerar alla taggar        |
 | POST      | /{id}        | Lagra nytt drama              |
 | PUT       | /{id}        | Uppdatera drama               |
 | DELETE    | /{id}        | Radera drama                  |
