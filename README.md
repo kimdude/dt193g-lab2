@@ -4,7 +4,7 @@
 ## API med backend-ramverk
 
 Repot innehåller källkod för ett API skapat med Hapi. API:et har CRUD funktionalitet för att hantera drama-serier i en Postgre databas.
-Grundlänken för API:et är (https://dt193g-lab2.onrender.com)[https://dt193g-lab2.onrender.com].
+Grundlänken för API:et är [https://dt193g-lab2.onrender.com](https://dt193g-lab2.onrender.com).
 
 ## API:et
 ### Router
